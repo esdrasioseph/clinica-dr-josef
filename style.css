@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Google Sans, system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --background-color: rgb(231, 230, 228);
+    --red-color: rgb(146, 63, 71);
+    --grey-color: rgb(188,188,188);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero__button, .cta-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero__button:hover, .cta-button:hover {
+    background-color: rgb(159, 83, 91);
+}
+
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    text-align: center;
+    background-color: var(--red-color);
+}
+
+.box__header-inline-block > li {
+    display: inline-block;
+    margin: 2rem 1rem;
+}
+
+.box__header-inline-block > li > a {
+    text-decoration: none;
+    color: var(--background-color);
+    font-weight: 600;
+}
+
+.hero__section {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+.hero__background {
+    position: absolute;
+    top: 0;
+    z-index: -12;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    object-position: mid;
+    display: block;
+}
+
+.hero__foreground {
+    text-align: center;
+    margin-top: 8rem;
+    color: var(--background-color);
+}
+
+.hero__title {
+    font-weight: 300;
+    padding-bottom: 1.2rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.hero__text {
+    padding-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.hero__button {
+    background-color: var(--red-color);
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    color: var(--background-color);
+    font-weight: 200;
+    border-radius: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu__section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.menu__title, .about__title,
+.contact__title {
+    font-size: 1.8rem;
+}
+
+.menu__section > h2 {
+    padding-bottom: 2rem;
+}
+
+.menu__img-inline-block {
+    display: inline-block;
+    margin-bottom: 2rem;
+    margin-right: 2rem ;
+    background-color: var(--red-color);
+    padding: 2rem;
+    border-radius: 0.8rem;
+}
+
+.menu__img-inline-block:nth-child(2) {
+    margin-right: 0;
+}
+
+.ilustration__img {
+    float: left;
+}
+
+.ilustration__box {
+    text-align: left;
+    margin-right: 2.5rem;
+    padding-left: 1rem;
+    display: inline-block;
+    max-width: 20rem;
+    font-size: 1.2rem;
+    color: var(--background-color);
+}
+
+.ilustration__title {
+    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+}
+
+.video-block {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    float: left;
+    overflow: hidden;
+    border-radius: 2rem solid;
+}
+
+.video__ilustration-box {
+    background-color: var(--red-color);
+    height: 63vh;
+    text-align: left;
+    padding: 2rem;
+    color: var(--background-color);
+    font-size: 1.2rem;
+}
+
+.video__title {
+    padding-bottom: 2rem;
+    max-width: 60rem;
+}
+
+.video__text {
+    max-width: 60rem;
+}
+
+.about__section {
+    margin-top: 2rem;
+    position: relative;
+    height: 35vh;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.about__foreground {
+    text-align: center;
+    padding-top: 2.2rem;
+    color: var(--background-color);
+}
+
+.about__title{
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.about__text {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+
+.about__background {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    z-index: -12;
+    width: 100%;
+    height: 35vh;
+    object-position: mid;
+}
+
+.contact__section {
+    margin-top: 2rem;
+    height: 35vh;
+}
+
+.contact__main {
+    text-align: center;
+}
+
+.contact__title {
+    padding-bottom: 1.2rem;
+}
+
+
+.contact__list {
+    text-align: center;
+}
+
+.contact__list > div {
+    text-align: center;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-right: 5rem;
+}
+
+.contact__item-title {
+    text-align: left;
+    font-weight: bold;
+}
+
+.cta-button {
+    margin: 2rem auto;
+    text-align: center;
+    display: block;
+    background-color: var(--red-color);
+    padding: 0.8rem 1.2rem;
+    width: 20rem;
+    text-decoration: none;
+    color: var(--background-color);
+    border-radius: 1.5rem;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: var(--red-color);
+}
+
+.josef__copy{
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--background-color);
+}
+
+.esdras__sign {
+    padding-top: 0.5rem;
+}
+
+.esdras__sign, .esdras__sign > a {
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+/* Responsividade*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+/* 1. Remove as bordas brancas e ajusta o menu no celular */
+    header {
+    width: 100%;
+}
+.box__header-inline-block {
+    padding: 0;
+    margin: 0;
+}
+.box__header-inline-block > li {
+    margin: 0.8rem 0.4rem; /* Diminui a margem interna pra caber tudo na mesma linha */
+}
+
+/* 2. Remove o excesso de fundo vermelho do vídeo no celular */
+.video__ilustration-box {
+    height: auto; /* Destrava os 63vh fixos apenas no mobile */
+    padding-bottom: 2rem;
+}
+
+/* 3. Solta a altura da seção de contato e ajusta a largura do botão */
+.contact__section {
+    height: auto; /* Destrava os 35vh fixos para não sobrepor o footer */
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.cta-button {
+    width: 85%; /* Usa porcentagem para caber em qualquer largura de tela */
+    max-width: 20rem;
+    box-sizing: border-box;
+    }
+}
